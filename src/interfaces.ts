@@ -1,3 +1,3 @@
 export default interface DependencyValue{
-    [key: string]: Function
+    [key: string]: (a: any) => any;
 }
