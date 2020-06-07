@@ -1,7 +1,7 @@
 {
-  "name": "servicelocator",
+  "name": "servicelocator-node",
   "version": "1.0.0",
-  "description": "service locator",
+  "description": "service locator for node js",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
