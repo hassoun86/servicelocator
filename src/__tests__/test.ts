@@ -45,11 +45,11 @@ it('Should successfully get all dependencies', () => {
 });
 
 it('Should successfully clear all dependencies', () => {
-    spyOn(serviceLocator, 'clear');
-    serviceLocator.register('service', () => {
-      return service;
-    });
-  
-    serviceLocator.clear();
-    expect(serviceLocator.clear).toHaveBeenCalledTimes(1);
+  spyOn(serviceLocator, 'clear');
+  serviceLocator.register('service', () => {
+    return service;
   });
+
+  serviceLocator.clear();
+  expect(serviceLocator.clear).toHaveBeenCalledTimes(1);
+});
