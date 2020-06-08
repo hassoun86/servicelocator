@@ -13,7 +13,7 @@ class ServiceLocator {
    * @param dependencyName
    * @param constructor
    */
-  public register(dependencyName: string, constructor: () => any): void {
+  public register(dependencyName: string, constructor: (locator: ServiceLocator) => any): void {
     if (typeof constructor !== 'function') {
       throw new Error(dependencyName + ': Dependency constructor is not a function');
     }
